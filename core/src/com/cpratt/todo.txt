@@ -1,0 +1,18 @@
+TODO
+
+1. Screen resizing for different devices
+2. Remove dependency on arrow keys (phones only have touch down)
+3. (DONE)Add splash screen
+    3a. Set splash text to actual center (the text coords are for the top-left of the text so it looks off center)
+4. Add main menu
+5. Add transactions
+6. Add real graphics
+    6a. Add background
+    6b. Add player running / jumping animations
+    6c. Add different blocks
+7. Set player position at start of course and make sure the first few blocks are always present
+8. (DONE) Set camera so player appears on left of screen
+9. Fix bug where you can save yourself from falling by jumping when you collide with the front (left side) of a block
+10. Add delay before starting run
+11. Add music
+12. Implement a delay before the course starts

@@ -1,0 +1,2 @@
+1. Player lateral velocity will get stuck at 0 so you can't do anything but jump
+2. Initial platform should always be blocks so you don't fall through right away at the start

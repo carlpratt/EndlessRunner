@@ -1,0 +1,8 @@
+1. (DONE) Double Jump
+2. Oscillating obstacles (like the red / blue levels from super mario)
+3. Power ups (items you collect, may be in out of the way areas)
+    3a. Triple jump (one use per item collected)
+    3b. Slow down acceleration / velocity
+4. Change jump height based on touch duration
+5. Start up acceleration?
+6. Oscillating elevator platforms (add second floor with pickups?)
