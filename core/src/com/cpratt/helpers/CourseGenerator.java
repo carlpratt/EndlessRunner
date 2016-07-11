@@ -27,7 +27,24 @@ public class CourseGenerator {
     }
 
     public List<Block> generateInitCourse() {
-        blocks = generateChunk(GS.ZERO);
+
+
+        blocks = new ArrayList<Block>();
+
+        System.out.println("generate init chunk");
+
+        for (int i = GS.ZERO; i < CHUNK_LENGTH; i++) {
+            if ((random.nextInt(4)) != 0 || i < GS.INIT_COURSE_SAFE_ZONE_LENGTH) {
+                blocks.add(new Block(i * GS.BLOCK_WIDTH, GS.SCREEN_HEIGHT - GS.BLOCK_HEIGHT));
+            } else {
+                i++; // generate gaps in at least 2 block increments
+            }
+        }
+        chunksGenerated++;
+        return blocks;
+
+
+//        blocks = generateChunk(GS.ZERO);
 
         // trying to generate the initial chunk as a solid block
 //        blocks = new ArrayList<Block>();
@@ -37,7 +54,7 @@ public class CourseGenerator {
 //        }
 //        chunksGenerated++;
 
-        return blocks;
+//        return blocks;
     }
 
     public List<Block> handleCourseGeneration() {

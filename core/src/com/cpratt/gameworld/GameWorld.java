@@ -24,7 +24,7 @@ public class GameWorld {
         player = new Player(GS.PLAYER_START_X, GS.PLAYER_START_Y, GS.PLAYER_WIDTH, GS.PLAYER_HEIGHT);
         courseGenerator = new CourseGenerator(player);
         blocks = courseGenerator.generateInitCourse();
-        gameState = GameState.SPLASH;
+        gameState = GS.SPLASH_SCREEN_ENABLED ? GameState.SPLASH : GameState.GAME;
     }
 
     public void update(float delta) {
@@ -33,6 +33,7 @@ public class GameWorld {
         }
 
         player.update(delta);
+        System.out.println(1/delta);
         Collider.handleCollisions(player, blocks);
         courseGenerator.handleCourseGeneration();
         score = (int) player.getX();

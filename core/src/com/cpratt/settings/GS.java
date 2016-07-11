@@ -31,11 +31,15 @@ public class GS {
     // Camera
     public static int CAMERA_OFFSET_X = 100;
 
+    // WORLD
+    // Length of row of solid blocks to generate on init course creation. Prevents player from beginning over nothing.
+    public static int INIT_COURSE_SAFE_ZONE_LENGTH = 15;
+
     // MISC
     public static int RENDER_BOUNDS_X = 400;
     public static int RENDER_BOUNDS_Y = 400;
 
     // FEATURES
     public static boolean DOUBLE_JUMP_ENABLED = true;
-    public static boolean SPLASH_SCREEN_ENABLED = true;
+    public static boolean SPLASH_SCREEN_ENABLED = false;
 }

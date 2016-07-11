@@ -44,7 +44,8 @@ public class Collider {
                     } else {
                         player.getPosition().x = block.getPosition().x + GS.BLOCK_WIDTH;
                     }
-                    player.stopMoving();
+                    // removed to prevent player from randomly stopping
+//                    player.stopMoving();
                 }
                 break;
             }

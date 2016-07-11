@@ -1,2 +1,4 @@
 1. Player lateral velocity will get stuck at 0 so you can't do anything but jump
-2. Initial platform should always be blocks so you don't fall through right away at the start
+2. (DONE) Initial platform should always be blocks so you don't fall through right away at the start
+3. You're unable to save yourself if you fall and hit the side of a platform. You should be able to jump and carry yourself over and continue using a double jump
+4. Framerate issues on chunk generation. Chunk generation is sometimes called twice in a row.

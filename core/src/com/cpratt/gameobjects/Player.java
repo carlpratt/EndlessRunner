@@ -32,7 +32,7 @@ public class Player {
             velocity.y = 200;
         }
 
-        System.out.println(velocity.x);
+//        System.out.println(velocity.x);
 
 //        velocity.x = GS.PLAYER_LATERAL_VELOCITY;
 
